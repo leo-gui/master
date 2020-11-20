@@ -5,3 +5,10 @@ def process_time():
 
 import random
 print(random.random())
+
+import ssl
+print(ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE)
+
+'''
+zhushi
+'''
