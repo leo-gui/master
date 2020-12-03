@@ -1,14 +1,9 @@
-import time
-def process_time():
-    print(time.localtime())
-    return time.localtime()
+from flask import  Flask
+app = Flask(__name__)
 
-import random
-print(random.random())
+@app.route('/')
+def index():
+    return "<h1>ok<h1>"
 
-import ssl
-print(ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE)
-
-import readline
-
-repr()
+if __name__ == "__main__":
+    app.run()
