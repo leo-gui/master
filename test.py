@@ -8,6 +8,8 @@ app = Flask(__name__)
 def index():
     return '<h1>success<h1>'
 
+print("----------")
+
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
 channel.qeue_declare(queue='request')
